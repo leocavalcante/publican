@@ -1,0 +1,6 @@
+name: publican
+version: 0.1.0
+description: The package that will help you out with Dart's Pub
+
+executables:
+  publican:
