@@ -1,4 +1,4 @@
-# Publican
+# publican [![Pub Package](https://img.shields.io/pub/v/publican.svg)](https://pub.dartlang.org/packages/publican)
 
 🧔 The package that will help you out with Dart's Pub 🎯
 
