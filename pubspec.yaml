@@ -1,6 +1,12 @@
 name: publican
 version: 0.1.0
 description: The package that will help you out with Dart's Pub
+homepage: https://github.com/leocavalcante/publican
+authors:
+  - Leo Cavalcante <lc@leocavalcante.com>
 
 executables:
   publican:
+
+environment:
+  sdk: ">=1.19.0 <2.0.0"
