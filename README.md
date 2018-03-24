@@ -10,7 +10,11 @@ Bring **publican** to your global dependencies:
 pub global activate publican
 ```
 
-Create a new folder, enter it and start a `pubspec.yaml` file:
+## Commands
+
+### `publican init`
+
+Initializes a `pubspec.yaml` file.
 
 ```shell
 mkdir my_awesome_app
@@ -26,4 +30,13 @@ version: 0.1.0
 description: My awesome Dart app
 ```
 
+You can override default values throught the options:
+
+```shell
+-n, --name           (defaults to "my_app")
+-v, --version        (defaults to "0.1.0")
+-d, --description    (defaults to "My awesome Dart app")
+```
+
 _Note: it will not override your current pubspec.yaml file, if you already have one, its safe._
+
