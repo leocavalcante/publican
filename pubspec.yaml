@@ -5,6 +5,9 @@ homepage: https://github.com/leocavalcante/publican
 authors:
   - Leo Cavalcante <lc@leocavalcante.com>
 
+dependencies:
+  args: ^1.4.1
+
 executables:
   publican:
 
