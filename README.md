@@ -97,6 +97,17 @@ You can also constraint a dependency to a specific version using an `@` symbol:
 publican add angular@^1.1.2+2
 ```
 
+Want to try bleeding edge versions of you dependencies? Just add the `-a` or `--alpha` flag:
+
+```shell
+publican add -a angular
+```
+
+```yaml
+dependencies:
+  angular: ^5.0.0-alpha+8
+```
+
 ---
 
 BSD 3-Clause License
