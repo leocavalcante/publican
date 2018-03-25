@@ -13,6 +13,11 @@ pub global activate publican
 ## Commands
 
 - [publican init](#publican-init)
+- [publican add](#publican-add)
+
+[I have an ideia for a command!](https://github.com/leocavalcante/publican/issues)
+
+## Documentation
 
 ### `publican init`
 
@@ -91,3 +96,10 @@ You can also constraint a dependency to a specific version using an `@` symbol:
 ```shell
 publican add angular@^1.1.2+2
 ```
+
+---
+
+BSD 3-Clause License
+
+Copyright (c) 2018, Leo Cavalcante
+All rights reserved.
