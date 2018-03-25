@@ -1,16 +1,14 @@
-library publican;
-
 import 'dart:io';
 import 'dart:async';
 import 'package:args/command_runner.dart';
 
 class InitCommand extends Command {
-  static const String fileName = 'pubspec.yaml';
+  final File pubspec;
 
   final String name = 'init';
-  final String description = 'Initialize a ${InitCommand.fileName} file';
+  final String description = 'Initialize a pubspec file';
 
-  InitCommand() {
+  InitCommand(this.pubspec) {
     argParser.addOption('name', abbr: 'n', defaultsTo: 'my_app');
     argParser.addOption('version', abbr: 'v', defaultsTo: '0.1.0');
     argParser.addOption('description',
@@ -18,10 +16,8 @@ class InitCommand extends Command {
   }
 
   Future run() async {
-    final File pubspec = new File(InitCommand.fileName);
-
     if (await pubspec.exists()) {
-      return print('Already got a ${InitCommand.fileName} file.');
+      return print('Already got a pubspec file.');
     }
 
     await pubspec.writeAsString('''
@@ -30,6 +26,6 @@ version: ${argResults['version']}
 description: ${argResults['description']}
 ''');
 
-    print('${InitCommand.fileName} created!');
+    print('pubspec file created!');
   }
 }

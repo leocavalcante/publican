@@ -1,5 +1,5 @@
 name: publican
-version: 0.1.1
+version: 0.1.2
 description: The package that will help you out with Dart's Pub
 homepage: https://github.com/leocavalcante/publican
 authors:
@@ -7,6 +7,7 @@ authors:
 
 dependencies:
   args: ^1.4.1
+  http: ^0.11.3+16
 
 executables:
   publican:
