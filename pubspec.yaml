@@ -1,13 +1,16 @@
 name: publican
 version: 0.1.2
 description: The package that will help you out with Dart's Pub
+author: Leo Cavalcante <lc@leocavalcante.com>
 homepage: https://github.com/leocavalcante/publican
-authors:
-  - Leo Cavalcante <lc@leocavalcante.com>
 
 dependencies:
   args: ^1.4.1
   http: ^0.11.3+16
+
+dev_dependencies:
+  yaml: ^2.1.13
+  test: ^0.12.32+2
 
 executables:
   publican:
