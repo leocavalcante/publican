@@ -13,7 +13,9 @@ class AddCommand extends Command {
     argParser
       ..addFlag('dev', abbr: 'd', help: 'Installs as dev_dependencies.')
       ..addFlag('dry-run',
-          help: 'Outputs the final pubspec without writing it.');
+          help: 'Outputs the final pubspec without writing it.')
+      ..addFlag('alpha',
+          abbr: 'a', help: 'Allows resolving to latest alpha release.');
   }
 
   Future run() async {
@@ -66,7 +68,17 @@ class AddCommand extends Command {
     }
 
     final Map<String, dynamic> data = JSON.decode(response.body);
-    final List<String> versions = data['versions'];
+    final List<String> versions = argResults['alpha']
+        ? data['versions'].where((String ver) => ver.contains('alpha'))
+        : data['versions'];
+
+    if (versions.length <= 0) {
+      argResults['alpha']
+          ? print('No alpha releases for [$dep].')
+          : print('No stable releases for [$dep]');
+      exit(64);
+    }
+
     final String latestVer = versions.last;
 
     return '$dep: ^$latestVer';
