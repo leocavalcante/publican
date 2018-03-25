@@ -60,9 +60,9 @@ dependencies:
   angular: ^4.0.0+2
 ```
 
-**Also, it will not change your previous YAML structure definitions, that is a key difference from Publican to other similar packages.**
+⚠️ **Also, it will not change your previous YAML structure definitions, that is a key difference from Publican to other similar packages.**
 
-#### The `--dev` flag will add the dependencies to `dev_dependencies` key
+The `--dev` flag will add the dependencies to `dev_dependencies` key
 
 ```shell
 publican add --dev build_runner build_web_compilers
@@ -83,3 +83,9 @@ dev_dependencies:
 ```
 
 If you are not sure about the output, you can check it out before by adding the `--dry-run` flag, then it will print out what it would write.
+
+You can also constraint a dependency to a specific version using an `@` symbol:
+
+```shell
+publican add angular@^1.1.2+2
+```
