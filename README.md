@@ -1,4 +1,4 @@
-# publican [![Pub Package](https://img.shields.io/pub/v/publican.svg)](https://pub.dartlang.org/packages/publican)
+# publican [![Pub Package](https://img.shields.io/pub/v/publican.svg)](https://pub.dartlang.org/packages/publican) [![Build Status](https://travis-ci.org/leocavalcante/publican.svg?branch=master)](https://travis-ci.org/leocavalcante/publican)
 
 🧔 The package that will help you out with Dart's Pub 🎯
 
