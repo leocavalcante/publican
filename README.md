@@ -15,7 +15,7 @@ pub global activate publican
 - [publican init](#publican-init)
 - [publican add](#publican-add)
 
-[I have an ideia for a command!](https://github.com/leocavalcante/publican/issues)
+##### [I have an idea for a command](https://github.com/leocavalcante/publican/issues)
 
 ## Documentation
 
