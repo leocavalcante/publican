@@ -82,4 +82,4 @@ dev_dependencies:
   build_runner: ^0.8.0
 ```
 
-If you are not sure about the output, you can check it out before adding the `--dry-run` flag, then it will print out what it would write.
+If you are not sure about the output, you can check it out before by adding the `--dry-run` flag, then it will print out what it would write.
