@@ -12,6 +12,8 @@ pub global activate publican
 
 ## Commands
 
+- [publican init](#publican-init)
+
 ### `publican init`
 
 Initializes a `pubspec.yaml` file.
