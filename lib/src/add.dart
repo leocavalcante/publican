@@ -20,7 +20,8 @@ class AddCommand extends Command {
 
   Future run() async {
     if (!await pubspec.exists()) {
-      return print('No pubspec file found.');
+      print('No pubspec file found.');
+      return 'No pubspec file found.';
     }
 
     String contents = pubspec.readAsStringSync().trim();
@@ -67,7 +68,7 @@ class AddCommand extends Command {
       exit(64);
     }
 
-    final Map<String, dynamic> data = JSON.decode(response.body);
+    final Map<String, dynamic> data = json.decode(response.body);
     final List<String> versions = argResults['alpha']
         ? data['versions'].where((String ver) => ver.contains('alpha'))
         : data['versions'];

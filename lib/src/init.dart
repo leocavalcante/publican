@@ -17,7 +17,8 @@ class InitCommand extends Command {
 
   Future run() async {
     if (await pubspec.exists()) {
-      return print('Already got a pubspec file.');
+      print('Already got a pubspec file.');
+      return 'Already got a pubspec file.';
     }
 
     await pubspec.writeAsString('''
