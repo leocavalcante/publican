@@ -1,12 +1,15 @@
 name: publican
-version: 0.1.4
-description: The package that will help you out with Dart's Pub
+version: 0.2.0
+description: The package that will help you out with Dart's Pub with things like project initialization and dependency declarations.
 author: Leo Cavalcante <lc@leocavalcante.com>
 homepage: https://github.com/leocavalcante/publican
 
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+
 dependencies:
-  args: ^1.4.1
-  http: ^0.11.3+16
+  args: ^1.5.0
+  http: ^0.11.3+17
 
 dev_dependencies:
   yaml: ^2.1.13
@@ -14,6 +17,3 @@ dev_dependencies:
 
 executables:
   publican:
-
-environment:
-  sdk: '>=2.0.0 <3.0.0'

@@ -1,6 +1,7 @@
-import 'dart:io';
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
+
 import 'package:args/command_runner.dart';
 import 'package:http/http.dart' as http;
 
@@ -63,7 +64,7 @@ class AddCommand extends Command {
         await client.get('https://pub.dartlang.org/packages/$dep.json');
     client.close();
 
-    if (response.statusCode == HttpStatus.NOT_FOUND) {
+    if (response.statusCode == HttpStatus.notFound) {
       print('Sorry, [$dep] not found on Pub.');
       exit(64);
     }
